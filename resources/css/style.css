@@ -1,0 +1,287 @@
+/*-------------------------
+GOOGLE fONT
+--------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans+Narrow:wght@400;700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+/*-------------------------
+VARIABLES
+--------------------------*/
+/*
+    color-primary: #2c64ff;
+    color-primary-1: #eef2f5;
+    color-secondary: #a2adb5;
+    color-white: #fff;
+    color-heading: #132D53;
+    last-heading-color: #9AA5AF;
+    font-color: #888888;
+    */
+
+/*-------------------------
+BASE
+--------------------------*/
+*,
+*::after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+section {
+    background-color: #a2adb5;
+    position: relative;
+}
+
+/*-------------------------
+COMPONENTS
+--------------------------*/
+.row {
+    width: 114rem;
+    margin: 0 auto;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+/*-------------------------
+typography
+--------------------------*/
+.heading-primary {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    color: #132D53;
+}
+
+.heading-last {
+    font-size: 1rem;
+    color: #9AA5AF;
+    margin-bottom: 4rem;
+}
+
+.heading-fourth {
+    font-size: 1.6rem;
+    color: #424141;
+    margin-bottom: .5rem;
+}
+
+.plan-para {
+    font-size: 1.4rem;
+    color: #a2adb5;
+    margin-bottom: 2rem;
+}
+
+.question-mark {
+    font-size: 1.6rem;
+}
+
+/*-------------------------
+LOGIN SECTION
+--------------------------*/
+.vertical-blue {
+    background-color: #2c64ff;
+    height: 100rem;
+    width: 30%;
+}
+
+.billage-image {
+    background-image: linear-gradient(#2c64ff90, #2c64ff90), url(../img/1500-0-.png);
+    background-size: cover;
+    padding: 4rem;
+    margin-top: -1rem;
+    height: 70rem;
+    position: relative;
+}
+
+.billage-image::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f04b";
+    background-color: rgba(255, 255, 255, 0.653);
+    color: #2c64ff;
+    font-size: 1.2rem;
+    text-align: center;
+    vertical-align: middle;
+    padding: 2rem 2.2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    border-radius: 10rem;
+    -webkit-border-radius: 10rem;
+    -moz-border-radius: 10rem;
+    -ms-border-radius: 10rem;
+    -o-border-radius: 10rem;
+    cursor: pointer;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.billage-image img {
+    width: 5rem;
+    margin-right: 1rem;
+}
+
+.logo {
+    font-family: 'PT Sans Narrow', sans-serif;
+    display: inline;
+    vertical-align: top;
+    color: #fff;
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+.registration-form {
+    background-color: #fff;
+    height: 70rem;
+    position: absolute;
+    top: 10rem;
+    left: 24rem;
+    box-shadow: 1px 2px 20px 5px #0000004d;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    overflow: hidden;
+}
+
+.about-more {
+    float: right;
+    font-size: 1.2rem;
+    padding: 2rem 4rem;
+    color: #2c64ff;
+}
+
+.login-form {
+    padding: 6rem 10rem 0 10rem;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    width: 100%;
+    border: 1px solid #EDF0F2;
+    color: #9AA5AF;
+    padding: 1rem 3rem;
+    margin-bottom: 2rem;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    outline: none;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.email::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0e0";
+    font-weight: 900;
+    display: block;
+    position: absolute;
+    top: 3.5rem;
+    left: 1rem;
+    color: #9AA5AF;
+
+}
+
+.password::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f023";
+    font-weight: 900;
+    display: block;
+    position: absolute;
+    top: 3.5rem;
+    left: 1rem;
+    color: #9AA5AF;
+
+}
+
+.icon-show::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f06e";
+    font-weight: 900;
+    display: block;
+    position: absolute;
+    top: 3.5rem;
+    left: 28rem;
+    color: #9AA5AF;
+    cursor: pointer;
+}
+
+.icon-hide::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f070";
+    font-weight: 900;
+    display: block;
+    position: absolute;
+    top: 3.5rem;
+    left: 28rem;
+    color: #9AA5AF;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    outline: none;
+    border: none;
+    background-color: #2c64ff;
+    color: #fff;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+    letter-spacing: .5px;
+    word-spacing: 1px;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 1px 2px 5px 0px #0000007a;
+    cursor: pointer;
+}
+
+label {
+    font-size: 1.4rem;
+    color: #424141;
+    position: relative;
+}
+
+span,
+.login-link {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+.login-link,
+.plan {
+    color: #2c64ff;
+}
+
+.need-help {
+    border-top: 1px solid #EDF0F2;
+    padding: 6rem 10rem 0 10rem;
+    margin-top: 6rem;
+}
+
+.plan {
+    font-size: 1.4rem;
+}
